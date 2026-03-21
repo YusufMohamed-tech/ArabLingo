@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
-<body class="font-sans text-dark bg-white antialiased selection:bg-accentBlue selection:text-white">
+<body class="font-sans text-dark bg-white/90 backdrop-blur-sm antialiased selection:bg-accentBlue selection:text-white">
 
     <!-- NAVBAR -->
     <nav class="fixed w-full z-50 bg-transparent border-b border-transparent transition-all duration-300" id="navbar">
@@ -69,13 +69,13 @@
             </div>
         </div>
         
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+        <div id="mobile-menu" class="hidden md:hidden bg-white/90 backdrop-blur-sm border-t border-gray-100 absolute w-full shadow-lg">
             <div class="px-4 pt-2 pb-6 space-y-1">
-                <a href="index.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-accentBlue hover:bg-gray-50 rounded-lg">Home</a>
-                <a href="about.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-accentBlue hover:bg-gray-50 rounded-lg">About</a>
-                <a href="research.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-accentBlue hover:bg-gray-50 rounded-lg">Research</a>
-                <a href="volunteer.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-accentBlue hover:bg-gray-50 rounded-lg">Volunteering (Join)</a>
-                <a href="partnerships.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-accentBlue hover:bg-gray-50 rounded-lg">Partnerships</a>
+                <a href="index.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-accentBlue hover:bg-gradient-to-b from-gray-50 to-blue-50/30 rounded-lg">Home</a>
+                <a href="about.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-accentBlue hover:bg-gradient-to-b from-gray-50 to-blue-50/30 rounded-lg">About</a>
+                <a href="research.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-accentBlue hover:bg-gradient-to-b from-gray-50 to-blue-50/30 rounded-lg">Research</a>
+                <a href="volunteer.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-accentBlue hover:bg-gradient-to-b from-gray-50 to-blue-50/30 rounded-lg">Volunteering (Join)</a>
+                <a href="partnerships.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-accentBlue hover:bg-gradient-to-b from-gray-50 to-blue-50/30 rounded-lg">Partnerships</a>
                 
                 <div class="pt-4 px-3">
                     <a href="contact.html" class="block w-full text-center px-5 py-3 rounded-xl bg-accentBlue text-white font-medium hover:bg-blue-600 transition-colors">Explore More</a>
@@ -105,10 +105,10 @@
     <!-- FOOTER -->
     <footer class="bg-dark text-white pt-20 pb-10 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-10">
                 <div class="md:col-span-1">
                     <div class="flex items-center gap-3 mb-6">
-                        <div class="bg-white p-1 rounded-sm"><img src="Logo.jpeg" alt="ArabLingo Logo" class="h-8 w-auto"></div>
+                        <div class="bg-white/90 backdrop-blur-sm p-1 rounded-sm"><img src="Logo.jpeg" alt="ArabLingo Logo" class="h-8 w-auto"></div>
                         <span class="font-bold text-xl tracking-tight text-white">ArabLingo</span>
                     </div>
                     <p class="text-gray-400 text-sm leading-relaxed mb-6">Building inclusive communities where every child is understood and supported.</p>
