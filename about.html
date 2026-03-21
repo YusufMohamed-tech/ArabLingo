@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | ArabLingo</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#EBF4FF',
+                        secondary: '#F5F3FF',
+                        accentBlue: '#3B82F6',
+                        accentPurple: '#8B5CF6',
+                        dark: '#1E293B',
+                        light: '#F8FAFC'
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 40px -5px rgba(59, 130, 246, 0.15)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="font-sans text-dark bg-white antialiased selection:bg-accentBlue selection:text-white">
+
+    <!-- NAVBAR -->
+    <nav class="fixed w-full z-50 bg-transparent border-b border-transparent transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-3 cursor-pointer">
+                    <img src="Logo.jpeg" alt="ArabLingo Logo" class="h-10 w-auto rounded-md object-contain">
+                    <span class="font-bold text-xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-accentBlue to-accentPurple">ArabLingo</span>
+                </a>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-sm font-medium text-gray-600 hover:text-accentBlue transition-colors">Home</a>
+                    <a href="about.html" class="text-sm font-medium text-gray-600 hover:text-accentBlue transition-colors">About</a>
+                    <a href="research.html" class="text-sm font-medium text-gray-600 hover:text-accentBlue transition-colors">Research</a>
+                    <a href="volunteer.html" class="text-sm font-medium text-gray-600 hover:text-accentBlue transition-colors">Volunteering (Join)</a>
+                    <a href="partnerships.html" class="text-sm font-medium text-gray-600 hover:text-accentBlue transition-colors">Partnerships</a>
+                    <a href="team.html" class="text-sm font-medium text-gray-600 hover:text-accentBlue transition-colors">Team</a>
+                    <a href="contact.html" class="px-5 py-2.5 rounded-full bg-accentBlue text-white text-sm font-medium hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 transform hover:-translate-y-0.5">Explore More</a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-dark focus:outline-none p-2">
+                        <i class="ph ph-list text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="index.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-accentBlue hover:bg-gray-50 rounded-lg">Home</a>
+                <a href="about.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-accentBlue hover:bg-gray-50 rounded-lg">About</a>
+                <a href="research.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-accentBlue hover:bg-gray-50 rounded-lg">Research</a>
+                <a href="volunteer.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-accentBlue hover:bg-gray-50 rounded-lg">Volunteering (Join)</a>
+                <a href="partnerships.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-accentBlue hover:bg-gray-50 rounded-lg">Partnerships</a>
+                <a href="team.html" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-accentBlue hover:bg-gray-50 rounded-lg">Team</a>
+                <div class="pt-4 px-3">
+                    <a href="contact.html" class="block w-full text-center px-5 py-3 rounded-xl bg-accentBlue text-white font-medium hover:bg-blue-600 transition-colors">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+    
+    <!-- SECTION 5: ABOUT -->
+    <section class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="w-full lg:w-1/2 relative" data-aos="fade-right">
+                    <div class="aspect-square rounded-3xl overflow-hidden relative shadow-2xl">
+                        <div class="absolute inset-0 bg-gradient-to-br from-primary to-secondary"></div>
+                        <img src="Logo.jpeg" alt="About ArabLingo" class="absolute inset-0 w-full h-full object-contain p-12 mix-blend-multiply opacity-90">
+                        <div class="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/50">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-accentBlue text-white flex items-center justify-center flex-shrink-0">
+                                    <i class="ph ph-heart text-2xl"></i>
+                                </div>
+                                <p class="text-sm font-semibold text-dark">Dedicated to child-centered approaches.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2" data-aos="fade-left">
+                    <span class="text-sm font-semibold text-accentBlue tracking-wider uppercase mb-2 block">About Us</span>
+                    <h2 class="text-3xl md:text-5xl font-bold text-dark mb-6 leading-tight">Empowering Communities Through Understanding</h2>
+                    <div class="prose prose-lg text-gray-600">
+                        <p class="mb-6">
+                            ArabLingo supports children with language and learning differences through early screening, awareness, and accessible educational support, with a focus on Arabic-speaking communities.
+                        </p>
+                        <p class="mb-8 font-light">
+                            *(Detailed About Section content can be seamlessly integrated into this split professional layout design as it becomes available.)*
+                        </p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3 text-dark font-medium"><i class="ph ph-check-circle text-accentBlue text-xl"></i> Accessible Tools</li>
+                        <li class="flex items-center gap-3 text-dark font-medium"><i class="ph ph-check-circle text-accentPurple text-xl"></i> Inclusive Support</li>
+                        <li class="flex items-center gap-3 text-dark font-medium"><i class="ph ph-check-circle text-blue-500 text-xl"></i> Professional Guidance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: MISSION -->
+    <section class="py-24 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="w-full md:w-1/3" data-aos="fade-right">
+                    <h2 class="text-4xl md:text-5xl font-bold text-dark mb-6 relative inline-block">
+                        Our Mission
+                        <svg class="absolute -bottom-2 left-0 w-full text-accentPurple opacity-50" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 50 15 100 5" stroke="currentColor" stroke-width="3" fill="transparent"/></svg>
+                    </h2>
+                    <p class="text-gray-600 mb-8">Driving systemic change to support cognitive and linguistic diversity in the Arab world.</p>
+                </div>
+                <div class="w-full md:w-2/3">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-6 bg-white rounded-2xl flex items-start gap-4 border border-transparent hover:border-gray-200 shadow-soft transition-colors" data-aos="fade-up" data-aos-delay="0">
+                            <div class="mt-1 w-8 h-8 rounded-full bg-accentBlue text-white flex items-center justify-center flex-shrink-0 shadow-sm">
+                                <i class="ph ph-check font-bold text-sm"></i>
+                            </div>
+                            <p class="text-dark font-medium">Identify language challenges early, before they limit learning or confidence</p>
+                        </div>
+                        <div class="p-6 bg-white rounded-2xl flex items-start gap-4 border border-transparent hover:border-gray-200 shadow-soft transition-colors" data-aos="fade-up" data-aos-delay="100">
+                            <div class="mt-1 w-8 h-8 rounded-full bg-accentBlue text-white flex items-center justify-center flex-shrink-0 shadow-sm">
+                                <i class="ph ph-check font-bold text-sm"></i>
+                            </div>
+                            <p class="text-dark font-medium">Prevent educational exclusion by replacing misunderstanding with informed support</p>
+                        </div>
+                        <div class="p-6 bg-white rounded-2xl flex items-start gap-4 border border-transparent hover:border-gray-200 shadow-soft transition-colors" data-aos="fade-up" data-aos-delay="200">
+                            <div class="mt-1 w-8 h-8 rounded-full bg-accentBlue text-white flex items-center justify-center flex-shrink-0 shadow-sm">
+                                <i class="ph ph-check font-bold text-sm"></i>
+                            </div>
+                            <p class="text-dark font-medium">Equip families, educators, and schools with accessible tools and guidance</p>
+                        </div>
+                        <div class="p-6 bg-white rounded-2xl flex items-start gap-4 border border-transparent hover:border-gray-200 shadow-soft transition-colors" data-aos="fade-up" data-aos-delay="300">
+                            <div class="mt-1 w-8 h-8 rounded-full bg-accentBlue text-white flex items-center justify-center flex-shrink-0 shadow-sm">
+                                <i class="ph ph-check font-bold text-sm"></i>
+                            </div>
+                            <p class="text-dark font-medium">Advance better, child-centered approaches to language support and intervention</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-20 pb-10 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="md:col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="bg-white p-1 rounded-sm"><img src="Logo.jpeg" alt="ArabLingo Logo" class="h-8 w-auto"></div>
+                        <span class="font-bold text-xl tracking-tight text-white">ArabLingo</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Building inclusive communities where every child is understood and supported.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-accentBlue hover:text-white transition-colors"><i class="ph ph-linkedin-logo text-xl"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-accentBlue hover:text-white transition-colors"><i class="ph ph-twitter-logo text-xl"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-accentBlue hover:text-white transition-colors"><i class="ph ph-envelope-simple text-xl"></i></a>
+                    </div>
+                </div>
+                <div class="md:col-span-1">
+                    <h4 class="text-lg font-semibold mb-6 text-white">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors text-sm">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors text-sm">About</a></li>
+                        <li><a href="research.html" class="text-gray-400 hover:text-white transition-colors text-sm">Research</a></li>
+                        <li><a href="volunteer.html" class="text-gray-400 hover:text-white transition-colors text-sm">Volunteering</a></li>
+                        <li><a href="team.html" class="text-gray-400 hover:text-white transition-colors text-sm">Team</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-2">
+                    <h4 class="text-lg font-semibold mb-6 text-white">Partner With Us</h4>
+                    <p class="text-gray-400 text-sm mb-4">Interested in adopting our screening tools or supporting our mission? Get in touch.</p>
+                    <form class="flex flex-col sm:flex-row gap-3">
+                        <input type="email" placeholder="Email Address" class="w-full bg-gray-800 border-none rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:ring-2 focus:ring-accentBlue focus:outline-none">
+                        <button type="submit" class="px-6 py-3 rounded-lg bg-accentBlue text-white font-medium hover:bg-blue-600 transition-colors sm:w-auto w-full whitespace-nowrap shadow-md">Get in Touch</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm text-center md:text-left">&copy; 2026 ArabLingo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
