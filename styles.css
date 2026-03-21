@@ -7,8 +7,21 @@ html {
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #eef2ff;
+    background-image:
+        radial-gradient(circle at 12% 14%, rgba(59, 130, 246, 0.10), transparent 38%),
+        radial-gradient(circle at 86% 18%, rgba(139, 92, 246, 0.10), transparent 36%),
+        linear-gradient(180deg, #f8fbff 0%, #f5f7ff 100%);
     overflow-x: hidden;
+}
+
+section {
+    position: relative;
+}
+
+/* Adds depth to glass cards after reducing white surfaces */
+[class*="bg-white/75"] {
+    box-shadow: 0 12px 38px -20px rgba(30, 64, 175, 0.28);
 }
 
 /* Flip Cards for Early Screening Section */
